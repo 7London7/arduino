@@ -135,3 +135,28 @@ String str = text;
   digitalWrite(13, LOW);
   delay(10);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* void setup() {
+  Serial.begin(9600);
+  pinMode(2, OUTPUT);
+    pinMode(3, INPUT);
+
+}
+
+void loop() {
+ bool a = digitalRead(3);
+ Serial.println(a);
+
+}
+*/
