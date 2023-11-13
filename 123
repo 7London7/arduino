@@ -13,12 +13,15 @@ long long itc_len(string str){
     return k;
 }
 
-string itc_probdop(int num, int bit, int code){
+string itc_probdop(int num1, int bit,int code){
     int  d = 1, per, kol = 0, i = 0, ost;
     char number;
+int num;
 string str = "";
-if(num < 0){
-    
+if(num1 < 0){
+num = -1 * num;  
+}else{
+num = num1;
 }
 while(num > 0){
    number = num % 2 + '0';
@@ -31,7 +34,7 @@ while(ost > 0){
     str = '0' + str;
     --ost;
 }
-if(num < 0){
+if(num1 < 0){
     str[0] = '1';
 }else{
 str[0] = '0';
